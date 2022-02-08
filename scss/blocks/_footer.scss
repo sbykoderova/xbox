@@ -1,0 +1,61 @@
+.footer-top {
+    background: $dark-gray;
+    padding: 5.8rem 0 3.8rem;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin-bottom: 7rem;
+    }
+
+    &__list {
+        width: 33.333%;
+    }
+
+    &__title {
+        margin-bottom: 3.4rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $green;
+    }
+
+    &__item+&__item {
+        margin-top: 3rem;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: $white;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: rgb(175, 175, 157);
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.footer-bottom {
+    margin: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 1.4rem;
+    color: rgb(175, 175, 157);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -1.5rem;
+        width: 100%;
+        border-top: .1rem solid $white;
+        opacity: 0.35;
+    }
+}

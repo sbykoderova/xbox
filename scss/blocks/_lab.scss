@@ -1,0 +1,70 @@
+.lab {
+    background: url(./../img/lab-bg.png) top/cover no-repeat;
+    background-color: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%);
+    padding: 12rem 0 14.5rem;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%);
+        z-index: 2;
+    }
+
+    &__container {
+        position: relative;
+        z-index: 3;
+    }
+
+    &__content {
+        max-width: 53.3rem;
+    }
+
+    &__title {
+        font-size: 4.8rem;
+        font-weight: 700;
+        text-shadow: .7rem .7rem 0 rgba(0, 0, 0, 0.3);
+        margin-bottom: 1rem;
+    }
+
+    &__descr {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        font-weight: 400;
+        margin-bottom: 3.7rem;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    &__btn {
+        padding: 2rem 3.6rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        border-radius: .4rem;
+        transition: box-shadow .4s ease;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 1.5rem 0 rgba(31, 31, 31, 0.7);
+        }
+
+        a {
+            color: $white;
+        }
+    }
+
+    &__btn--gray {
+        background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+    }
+
+    &__btn--green {
+        background-color: $green;
+    }
+}

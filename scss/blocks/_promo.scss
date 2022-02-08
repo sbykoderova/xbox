@@ -1,0 +1,77 @@
+.promo {
+    position: relative;
+    height: 100vh;
+
+    &__slide-01 {
+        background: url(./../img/promo-bg-1.jpg) top/cover no-repeat;
+        margin-top: 6rem;
+    }
+
+    &__slide-02 {
+        background: url(./../img/promo-bg-2.jpg) top/cover no-repeat;
+        margin-top: 6rem;
+    }
+
+    &__slide-03 {
+        background: url(./../img/promo-bg-3.png) top/cover no-repeat;
+        margin-top: 6rem;
+    }
+
+    &__slide-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-top: 25.5rem;
+        margin-left: auto;
+        margin-right: 14rem;
+        width: 52rem;
+    }
+
+    &__text {
+        padding-right: 16.8rem;
+
+        h1 {
+            margin: 0;
+            font-size: 5.5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        padding-top: 10rem;
+
+        a {
+            height: 3.8rem;
+            color: $white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            border-radius: .4rem;
+            transition: all 0.3s linear;
+        }
+    }
+
+    &__btn-green {
+        background-color: $green;
+        border: .2rem solid $green;
+        padding: .8rem 2rem;
+
+        &:hover {
+            background-color: inherit;
+        }
+    }
+
+    &__btn-gray {
+        background: linear-gradient(180deg, #686C6F 0%, $dark-gray 100%);
+        margin-left: 1.2rem;
+        padding: 1rem 2rem;
+
+        &:hover {
+            background: linear-gradient(180deg, $dark-gray 0%, #686C6F 100%);
+        }
+    }
+}

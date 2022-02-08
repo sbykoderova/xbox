@@ -1,0 +1,43 @@
+@import 'base/vars';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+    font-size: 1.4rem;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Blocks */
+@import 'blocks/reset';
+@import 'blocks/scroll';
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/swiper';
+@import 'blocks/value';
+@import 'blocks/exclusive';
+@import 'blocks/lab';
+@import 'blocks/footer';
+@import 'blocks/media';

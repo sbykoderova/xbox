@@ -1,0 +1,141 @@
+.header {
+    background: $dark-gray;
+    border-bottom: .4rem solid #777777;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &__container {
+        min-height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        z-index: 5;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 4.5rem;
+    }
+
+    &__item {
+        position: relative;
+
+        &--arrow {
+            &::after {
+                content: '';
+                position: absolute;
+                background: url(./../img/icons/arrow-down.svg);
+                width: 1.2rem;
+                height: .7rem;
+                right: -2rem;
+                bottom: .3rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.search {
+    z-index: 5;
+
+    &__input {
+        padding: .9rem 1.6rem .8rem .5rem;
+        width: 21rem;
+        background: $white;
+        border: .1rem solid #CCCCCC;
+        border-radius: .4rem;
+        margin-left: 3.7rem;
+    }
+}
+
+.profile {
+    position: relative;
+    margin-left: 3rem;
+    width: 11.7rem;
+
+    &__link {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.5);
+        padding-left: 2.5rem;
+        transition: color 0.2s linear;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -.2rem;
+        left: 0;
+        background: url(./../img/icons/header-user.svg);
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: url(./../img/icons/arrow-down.svg);
+        width: 1.2rem;
+        height: .7rem;
+        right: 0;
+        bottom: .3rem;
+        cursor: pointer;
+    }
+}
+
+.burger {
+    display: none;
+
+    &._active {
+        span {
+            transform: scale(0) translate(0px, -50%);
+        }
+    }
+
+    &._active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+
+    &._active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
+}
+
+.burger-menu {
+    display: none;
+}
