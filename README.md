@@ -1,3 +1,3 @@
-## Landing page "XBOX"
-## ❗Отработка навыков с разными слайдерами
-### Демо: https://sbykoderova.github.io/XBOX/
+# Landing page "XBOX"
+## ❗Отработка навыков со слайдерами
+### Демо: https://sbykoderova.github.io/xbox/
